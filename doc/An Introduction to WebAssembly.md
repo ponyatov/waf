@@ -27,3 +27,6 @@ benefits of using [[vscode/Visual Studio Code|Visual Studio Code]] as a developm
 ## [[vscode/Visual Studio Code#WASM]]
 ## [[Node.js#WASM]]
 ## [[Node.js#install]]
+## [[wat-wasm#install]]
+## [[Our First Nodejs WebAssembly App]]
+## [[Calling the WebAssembly Module from Nodejs]]

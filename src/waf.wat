@@ -5,10 +5,17 @@
     )
     (global $b_val (mut i32) (i32.const 2))
     (global $c_val (mut i32) (i32.const 0))
-    (func $add (export "add")
+    (func $add_glob ;; (export "add")
         (global.set $c_val
             (i32.add
                 (global.get $a_val)
                 (global.get $b_val)
     )))
+    (func $add (export "add")
+        (param $a i32) (param $b i32) ;; parameters
+        (result i32)                  ;; return type
+            (i32.add
+                (local.get $a)
+                (local.get $b)
+    ))
 )

@@ -3,6 +3,6 @@
 ### [[wabt]]
 
 ```Makefile
-tmp/%.wat: bin/%.wasm
-	wasm2wat $< -o $@
+bin/%.wasm: src/%.wat
+	wat2wasm $< -o $@ && wasm-objdump -x $@
 ```

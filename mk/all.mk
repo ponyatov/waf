@@ -4,4 +4,5 @@ run: wasm
 watch: wasm
 
 .PHONY: wasm
-wasm: tmp/$(APP).wat
+wasm: bin/$(APP).js bin/$(APP).wasm tmp/$(APP).wat
+	$^
