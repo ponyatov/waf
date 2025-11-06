@@ -25,3 +25,14 @@ console.log(`${a}+${b} = ${a + b}`);
     console.log(`c = ${c}`);
 })();
 ```
+
+[[Node.js]] can read the [[WebAssembly]] `.wasm` file directly from the hard drive
+
+- [[js/require]]
+	- [[js/fs#readFileSync]]
+- [[js/process#argv]]
+
+We use [[IIFE]]: when you do tasks like instantiate a [[WebAssembly]] module, it takes time, and you don’t want to tie up the browser or node while waiting for that process to finish. The `(async () => {})();` syntax tells the JavaScript engine that there is a [[js/promise]] object coming, so go do something else while waiting for the result.
+
+After instantiating the module, we call the `add()` function exported from the WAT code
+
