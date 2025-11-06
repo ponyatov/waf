@@ -28,8 +28,8 @@ function add() {
     (global $c_val (mut i32) (i32.const 0))
     ;;
     (func $add (export "add")
-        global.get $a_val   ;; push var content
-        global.get $b_val
+        global.get $a_val   ;; ( -- a ) push var content
+        global.get $b_val   ;; ( -- a b )
         i32.add             ;; ( a b -- c=a+b )
         global.set $c_val
     )
@@ -42,3 +42,9 @@ function add() {
 	- [[waf/mut]]
 - [[waf/func|func]]
 	- [[waf/export|export]]
+- [[waf/global#get]]
+- [[waf/global#set]]
+
+code listings contains more lines of code because [[WAT]] must be more explicit than [[JavaScript]].
+
+[[WebAssembly]] is compiled into a bytecode [[AOT|ahead of time]] and must be made aware of all the types it’s using

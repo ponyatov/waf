@@ -6,9 +6,9 @@
     (global $b_val (mut i32) (i32.const 2))
     (global $c_val (mut i32) (i32.const 0))
     (func $add (export "add")
-        global.get $a_val   ;; push var content
-        global.get $b_val
-        i32.add             ;; ( a b -- c=a+b )
-        global.set $c_val
-    )
+        (global.set $c_val
+            (i32.add
+                (global.get $a_val)
+                (global.get $b_val)
+    )))
 )

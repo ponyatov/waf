@@ -7,3 +7,14 @@
         (i32.const 123) ;; required initializer
     )
 ```
+
+## get
+```wasm
+        global.get $a_val   ;; ( -- a ) push var content
+        global.get $b_val
+```
+
+## set
+```wasm
+        global.set $c_val
+```
