@@ -1,5 +1,7 @@
 # Calling the [[WebAssembly]] Module from [[Node.js]]
 
+Calling the `add()` [[WebAssembly]] function from an asynchronous [[js/IIFE]]:
+
 ```js
 #!/usr/bin/env nodejs
 // WASM loader wrapper
