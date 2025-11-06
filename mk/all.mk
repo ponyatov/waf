@@ -4,4 +4,4 @@ run: wasm
 watch: wasm
 
 .PHONY: wasm
-wasm: bin/$(APP).wasm
+wasm: tmp/$(APP).wat
