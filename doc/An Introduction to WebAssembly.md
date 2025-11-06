@@ -24,3 +24,6 @@ benefits of using [[vscode/Visual Studio Code|Visual Studio Code]] as a developm
 ## [[Stack Machines]]
 ## [[Example Using S-Expressions]]
 ## [[The Embedding Environment]]
+## [[vscode/Visual Studio Code#WASM]]
+## [[Node.js#WASM]]
+## [[Node.js#install]]
