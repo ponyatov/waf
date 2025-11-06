@@ -1,4 +1,4 @@
-# AssemblyScript
+# 11: AssemblyScript
 
 A project [[Rick Battagline]] and [[Daniel Wirtz]] (creator of AssemblyScript) are working on, that looks at [[WebAssembly]] less from a systems language perspective, and more exploring the potential of fusing the best of [[JavaScript]] and the web platform with [[WebAssembly]]
 

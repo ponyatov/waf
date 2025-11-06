@@ -1,5 +1,5 @@
-# wasm2wat
-## [[WAT]]
+# `wasm2wat`
+## [[WAT]] disassembler
 ### [[wabt]]
 
 ```Makefile
