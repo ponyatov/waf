@@ -17,3 +17,6 @@ console.log(`${a}+${b} = ${a + b}`);
     let c = add(a, b);
     console.log(`c = ${c}`);
 })();
+
+WebAssembly.instantiate(wasm)               // -> module
+    .then((module) => console.log(module)); // .then(=>)
