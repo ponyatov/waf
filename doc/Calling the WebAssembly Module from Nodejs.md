@@ -36,3 +36,17 @@ We use [[IIFE]]: when you do tasks like instantiate a [[WebAssembly]] module, it
 
 After instantiating the module, we call the `add()` function exported from the WAT code
 
+## The `.then` Syntax
+
+We prefer to use the IIFE syntax, but either syntax is perfectly acceptable.
+
+```js
+WebAssembly.instantiate(wasm)               // -> module
+    .then((module) => console.log(module)); // .then(=>)
+```
+```
+{
+  instance: Instance [WebAssembly.Instance] {},
+  module: Module [WebAssembly.Module] {}
+}
+```
