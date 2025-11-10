@@ -3,8 +3,6 @@ file(GLOB WAT
     src/*.wat
 )
 
-message("-- |      wasm: " "${WAT}")
-
 foreach(WAT_FILE ${WAT})
     string(REGEX REPLACE ".+\/(.+)\.wat$" "${CMAKE_SOURCE_DIR}/bin/\\1.wasm"
         WASM_FILE           ${WAT_FILE})
