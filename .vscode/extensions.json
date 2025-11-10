@@ -14,6 +14,14 @@
         // Web/JS
         "esbenp.prettier-vscode",
         "dtsvet.vscode-wasm",
+        // C++
+        "ms-vscode.cpptools",
+        "jeff-hykin.better-cpp-syntax",
+        "ms-vscode.cmake-tools",
+        // parser
+        "daohong-emilio.yash",
+        "rreverser.ragel",
+        // "serghei-iakovlev.language-lemon",
         // Python
         "ms-python.python",
         "ms-python.autopep8",

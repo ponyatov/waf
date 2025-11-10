@@ -18,5 +18,5 @@ console.log(`${a}+${b} = ${a + b}`);
     console.log(`c = ${c}`);
 })();
 
-WebAssembly.instantiate(wasm)               // -> module
+WebAssembly.instantiate(wasm) // -> module
     .then((module) => console.log(module)); // .then(=>)

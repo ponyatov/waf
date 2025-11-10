@@ -1,6 +1,8 @@
 .PHONY: all run watch
-all: wasm
-run: wasm
+all: bin/$(APP) bin/$(APP).wasm
+run: bin/$(APP) bin/$(APP).wasm
+	$^
+
 watch: wasm
 
 .PHONY: wasm

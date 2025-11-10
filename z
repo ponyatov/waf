@@ -1,0 +1,1 @@
+find ~/em/cmake -regex .+\.cmake$ >> z
