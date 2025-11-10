@@ -20,4 +20,4 @@ NPM    = /usr/bin/npm
 TSC    = $(HOME)/.npm/bin/tsc
 DENO   = $(HOME)/.npm/bin/deno
 #
-KAITAI = kaitai
+KAITAI = /usr/bin/kaitai-struct-compiler
