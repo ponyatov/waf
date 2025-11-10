@@ -8,3 +8,5 @@ TMP       = $(CWD)/tmp
 REF       = $(CWD)/ref
 CAR       = $(HOME)/.cargo
 ODIR      = $(HOME)/.opam/$(OCAML_VER)/bin
+#
+DISTR    ?= $(HOME)/distr
