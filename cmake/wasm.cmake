@@ -27,6 +27,6 @@ foreach(WASM_FILE ${WASM})
         DEPENDS             ${WASM_FILE}
         WORKING_DIRECTORY   ${CMAKE_SOURCE_DIR}
         COMMAND             wasm2wat
-        ARGS                ${WASM_FILE} -o ${WAT_FILE}
+        ARGS                ${WASM_FILE} -o ${WASM_DUMP}
     )
 endforeach()
