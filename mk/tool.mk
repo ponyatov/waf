@@ -19,3 +19,5 @@ OLSP   = $(ODIR)/ocamllsp
 NPM    = /usr/bin/npm
 TSC    = $(HOME)/.npm/bin/tsc
 DENO   = $(HOME)/.npm/bin/deno
+#
+KAITAI = /usr/bin/kaitai-struct-compiler
