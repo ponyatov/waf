@@ -12,3 +12,12 @@ pub mod server {
     pub const bind: &str = const_format::formatcp!("{ip}:{port}");
 }
 
+/// screen width
+pub mod gui {
+    /// screen width (mobile phone emulation)
+    pub const width: i16 = 240;
+    /// screen height (mobile phone emulation)
+    pub const height: i16 = 320;
+    /// large icons (for tiny phone screen)
+    pub const icon_size: i16 = 64;
+}
