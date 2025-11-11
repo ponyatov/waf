@@ -16,7 +16,7 @@ foreach(KSY_FILE ${KSY})
         OUTPUT              ${KSY_CPP} ${KSY_HPP}
         DEPENDS             ${KSY_FILE} cmake/kaitai.cmake
         WORKING_DIRECTORY   ${CMAKE_SOURCE_DIR}
-        COMMAND             echo kaitai-struct-compiler
+        COMMAND             kaitai-struct-compiler
         ARGS                -- -I ${CMAKE_SOURCE_DIR}/src -d ${KSY_PATH}
                             -t cpp_stl ${KSY_FILE}
         # $(CMAKE--header-file=${LEXER_HPP} -o ${LEXER_CPP} ${LEX_FILE}
