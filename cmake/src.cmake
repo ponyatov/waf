@@ -13,8 +13,6 @@ file(GLOB C
      cpu/src/*.c*  cpu/${CPU}/src/*.c*
     arch/src/*.c* arch/${ARCH}/src/*.c*
       os/src/*.c*   os/${OS}/src/*.c*
-    # wasm
-    lib/kaitai/*.c*
 )
 
 file(GLOB H
@@ -25,8 +23,6 @@ file(GLOB H
      cpu/inc/*.h*  cpu/${CPU}/inc/*.h*
     arch/inc/*.h* arch/${ARCH}/inc/*.h*
       os/inc/*.h*   os/${OS}/inc/*.h*
-    # wasm
-    lib/kaitai/*.h*
 )
 
 file(GLOB INC
@@ -38,7 +34,5 @@ file(GLOB INC
      cpu/inc  cpu/${CPU}/inc
     arch/inc arch/${ARCH}/inc
       os/inc   os/${OS}/inc
-    # wasm
-    ${KSY_RT} lib/kaitai
 )
 include_directories(${INC})

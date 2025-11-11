@@ -1,22 +1,7 @@
 file(GLOB KSY
     RELATIVE ${CMAKE_SOURCE_DIR}
-    src/*.ksy
+    src/${APP}.ksy
 )
-
-set(KSY_RT ${CMAKE_SOURCE_DIR}/ref/kaitai_struct_cpp_stl_runtime)
-include_directories(${KSY_RT})
-
-file(GLOB KSY_RT_CPP
-    RELATIVE ${CMAKE_SOURCE_DIR}
-    ${KSY_RT}/*.cpp
-)
-list(APPEND CP ${KSY_RT_CPP})
-
-file(GLOB KSY_RT_HPP
-    RELATIVE  ${CMAKE_SOURCE_DIR}
-    ${KSY_RT}/*.h
-)
-list(APPEND HP ${KSY_RT_HPP})
 
 foreach(KSY_FILE ${KSY})
     string(REGEX REPLACE ".+\/(.+)\.ksy$" "${CMAKE_BINARY_DIR}/\\1.ksy"
@@ -37,8 +22,22 @@ foreach(KSY_FILE ${KSY})
         ARGS                -- -I ${CMAKE_SOURCE_DIR}/src -d ${KSY_PATH}
                             -t cpp_stl --cpp-namespace ${KSY_NAME} --cpp-standard 11
                             ${KSY_FILE}
-        # $(CMAKE--header-file=${LEXER_HPP} -o ${LEXER_CPP} ${LEX_FILE}
     )
 endforeach()
 
 add_compile_definitions(KS_STR_ENCODING_NONE)
+
+set(KSY_RT ${CMAKE_SOURCE_DIR}/lib/kaitai)
+include_directories(${KSY_RT}/..)
+
+file(GLOB KSY_RT_CPP
+    RELATIVE ${CMAKE_SOURCE_DIR}
+    ${KSY_RT}/*.cpp
+)
+list(APPEND CP ${KSY_RT_CPP})
+
+file(GLOB KSY_RT_HPP
+    RELATIVE  ${CMAKE_SOURCE_DIR}
+    ${KSY_RT}/*.h
+)
+list(APPEND HP ${KSY_RT_HPP})
