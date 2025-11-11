@@ -1,4 +1,4 @@
-KAITAI_DEB = kaitai-struct-compiler_$(KAITAI_VER)_all.deb
+KAITAI_DEB  = kaitai-struct-compiler_$(KAITAI_VER)_all.deb
 KAITAIL_URL = https://github.com/kaitai-io/kaitai_struct_compiler/releases/download
 GZ += $(KAITAI)
 $(KAITAI): $(DISTR)/Linux/$(KAITAI_DEB)

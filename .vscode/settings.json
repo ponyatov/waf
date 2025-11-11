@@ -38,20 +38,16 @@
     "json.format.enable": true,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
 
     // clang-format
     "clang-format.executable": "clang-format",
@@ -61,12 +57,10 @@
     // C++
     "[c]": {
         "editor.defaultFormatter": "xaver.clang-format",
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format",
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "C_Cpp.files.exclude": { "ref": false },
 
@@ -111,13 +105,11 @@
     "[ocaml]": {
         "editor.tabSize": 2,
         "editor.rulers": [80],
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
     "[ocaml.interface]": {
         "editor.tabSize": 2,
         "editor.rulers": [80],
-        "editor.formatOnSave": true
-    },
+        "editor.formatOnSave": false },
 
     // MinGW/MSYS2
     "terminal.integrated.defaultProfile.windows": "UCRT64",

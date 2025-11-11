@@ -21,6 +21,7 @@
         // parser
         "daohong-emilio.yash",
         "rreverser.ragel",
+        "fudgepops.kaitai-struct-vscode",
         // "serghei-iakovlev.language-lemon",
         // Python
         "ms-python.python",

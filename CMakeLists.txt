@@ -6,6 +6,7 @@ include(version)  # binary files naming by version & git branch/hash
 include(src)      # scan project for source code files
 include(syntax)   # parser generators (flex,yacc/bison,ragel,lemon,..)
 include(wasm)     # WebAssembly WASI runtime
+include(kaitai)
 
 message("-- |")
 message("-- | toolchain: " ${CMAKE_CXX_COMPILER} " @ " ${CMAKE_TOOLCHAIN_FILE})
@@ -15,6 +16,7 @@ message("-- |   startup: " "${S}")
 message("-- |    linker: " "${LD}")
 message("-- |    binary: " "${CMAKE_INSTALL_PREFIX}/${BIN_OUTPUT_NAME}${CMAKE_EXECUTABLE_SUFFIX}")
 message("-- |      wasm: " "${WASM}")
+message("-- |    kaitai: " "${KSY} -> ${CP}")
 message("-- |")
 
 add_executable(${CMAKE_PROJECT_NAME}
@@ -31,5 +33,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 ) # -static
 
 include(install) # target install
-include(cross)   # cross compiler binaries: elf/dfu
+include(fw)      # cross compiler binaries: elf/dfu
 include(clean)   # project clean-up (remove generated & temp files)

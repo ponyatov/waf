@@ -28,3 +28,5 @@ foreach(WASM_FILE ${WASM})
         ARGS                ${WASM_FILE} -o ${WASM_DUMP}
     )
 endforeach()
+
+add_custom_target(wasm DEPENDS ${WASD} ${CP} ${HP})
