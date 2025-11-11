@@ -1,6 +1,6 @@
 .PHONY: doc
 doc:
-	rsync -r $(HOME)/metadoc/$(APP)/ doc/
+	rsync -r $(HOME)/metadoc/$(APP)/ doc/$(APP)/
 
 RF += doc/WebAssembly-3.0-draft.pdf
 doc/WebAssembly-3.0-draft.pdf:
