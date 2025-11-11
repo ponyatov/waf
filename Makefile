@@ -16,6 +16,7 @@ include mk/python.mk
 include mk/ocaml.mk
 include mk/rust.mk
 include mk/llvm.mk
+include mk/wasm.mk
 include mk/gz.mk
 include mk/ref.mk
 include mk/install.mk
