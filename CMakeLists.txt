@@ -33,5 +33,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 ) # -static
 
 include(install) # target install
-include(cross)   # cross compiler binaries: elf/dfu
+include(fw)      # cross compiler binaries: elf/dfu
 include(clean)   # project clean-up (remove generated & temp files)

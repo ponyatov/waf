@@ -75,7 +75,7 @@
         "cwd" :   "${workspaceFolder}",
         "args": [ "bin/${workspaceFolderBasename}.wasm" ] },
     "cmake.allowCommentsInPresetsFile" : true,
-    "cmake.ignoreCMakeListsMissing"    : true,
+    "cmake.ignoreCMakeListsMissing"    : false,
 
     // Python
     // "python.defaultInterpreterPath":  "${workspaceFolder}/bin/python3",
