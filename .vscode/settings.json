@@ -4,6 +4,7 @@
     },
     "files.watcherExclude": {
         // "bin/**": true, "tmp/**": true, "ref/**": true,
+        "target/**": true,
     },
     "files.associations": {
         "*.ksy": "yaml",
@@ -42,11 +43,11 @@
         "editor.defaultFormatter" : "esbenp.prettier-vscode",
         "editor.formatOnSave": false},
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false },
+        "editor.defaultFormatter" : "esbenp.prettier-vscode",
+        "editor.formatOnSave": false},
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": false },
+        "editor.defaultFormatter" : "esbenp.prettier-vscode",
+        "editor.formatOnSave": false},
 
     // clang-format
     "clang-format.executable"     : "clang-format",
@@ -54,12 +55,12 @@
     "clang-format.style"          : "file",
 
     // C++
-    "[c]": {
-        "editor.defaultFormatter": "xaver.clang-format",
-        "editor.formatOnSave": false },
+    "[c]"  : {
+        "editor.defaultFormatter" : "xaver.clang-format",
+        "editor.formatOnSave": true },
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format",
-        "editor.formatOnSave": false },
+        "editor.defaultFormatter" : "xaver.clang-format",
+        "editor.formatOnSave": true },
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "C_Cpp.files.exclude": { "ref": false },
 
@@ -103,16 +104,18 @@
     "rust-analyzer.cargo.features"       : ["pc","i5","x86_64","linux"],
     // "rust-analyzer.cargo.target"         : "wasm32-unknown-unknown",
     "[rust]": { "editor.defaultFormatter": "rust-lang.rust-analyzer" },
+    // "rust-analyzer.cargo.target"         : "aarch64-unknown-linux-gnu",
+    // "rust-analyzer.cargo.target"         : "i686-pc-windows-gnu",
 
     // OCaml (cs3110)
     "[ocaml]": {
         "editor.tabSize": 2,
         "editor.rulers": [80],
-        "editor.formatOnSave": false },
+        "editor.formatOnSave": true },
     "[ocaml.interface]": {
         "editor.tabSize": 2,
         "editor.rulers": [80],
-        "editor.formatOnSave": false },
+        "editor.formatOnSave": true },
 
     // MinGW/MSYS2
     "terminal.integrated.defaultProfile.windows": "UCRT64",
