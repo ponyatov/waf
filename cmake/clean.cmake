@@ -1,7 +1,7 @@
 file(GLOB BINS
     ${CMAKE_INSTALL_PREFIX}/${BIN_OUTPUT_NAME}*
         ${CMAKE_BINARY_DIR}/${BIN_OUTPUT_NAME}*
-        $(WASM) $(WASD)
+        $(WASM) $(WASD) ${CP} ${HP}
 )
 
 set_property (
