@@ -19,7 +19,7 @@ const HTTP_NOCACHE: &[u8] = b"Cache-Control: no-cache\r\n";
 
 // static content
 const INDEX_HEAD: &[u8] = include_bytes!("../static/head.html");
-const INDEX_BODY: &[u8] = include_bytes!("../static/index.html");
+const INDEX_BODY: &[u8] = include_bytes!("../static/body.html");
 const INDEX_FOOT: &[u8] = include_bytes!("../static/foot.html");
 const LOGO_PNG: &[u8] = include_bytes!("../doc/logo.png");
 const CSS_CSS: &[u8] = include_bytes!("../static/css.css");
@@ -32,9 +32,9 @@ const APP_WASM: &[u8] = include_bytes!("../bin/waf.wasm");
 const CONFIG_JS: &[u8] = const_format::formatcp!(
     "// shared configuration
 // screen:
-export const width     = {width};
-export const height    = {height};
-export const icon_size = {icon_size};
+const width     = {width};
+const height    = {height};
+const icon_size = {icon_size};
 ",
     width = config::gui::width,
     height = config::gui::height,
