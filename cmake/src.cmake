@@ -19,5 +19,6 @@ file(GLOB INC
     RELATIVE ${CMAKE_SOURCE_DIR}
     ${CMAKE_BINARY_DIR}
     inc src
+    ${KSY_RT}
 )
 include_directories(${INC})

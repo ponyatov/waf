@@ -16,8 +16,8 @@ message("-- |   startup: " "${S}")
 message("-- |    linker: " "${LD}")
 message("-- |    binary: " "${CMAKE_INSTALL_PREFIX}/${BIN_OUTPUT_NAME}${CMAKE_EXECUTABLE_SUFFIX}")
 message("-- |      wasm: " "${WASM}")
-message("-- |    kaitai: " "${KSY} -> ${CP}")
-message("-- |")
+message("-- |    kaitai: " "${KSY} -> ${CP} ${HP}")
+message("-- | ${KSY_RT}")
 
 add_executable(${CMAKE_PROJECT_NAME}
     ${C}  ${H}          # C/C++ source
