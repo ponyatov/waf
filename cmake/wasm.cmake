@@ -34,11 +34,11 @@ foreach(WASM_FILE ${WASM})
         WASM_DUMP           ${WASM_FILE})
         list(APPEND WASD    ${WASM_DUMP})
     add_custom_command(
-        OUTPUT              ${WAT_FILE}
+        OUTPUT              ${WASM_DUMP}
         DEPENDS             ${WASM_FILE}
         WORKING_DIRECTORY   ${CMAKE_SOURCE_DIR}
-        COMMAND             hexdump
-        ARGS                -C ${WASM_FILE} > ${WASM_DUMP}
+        COMMAND             wasm2wat
+        ARGS                ${WASM_FILE} -o ${WASM_DUMP}
     )
 endforeach()
 
