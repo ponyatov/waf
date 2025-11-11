@@ -40,3 +40,5 @@ foreach(KSY_FILE ${KSY})
         # $(CMAKE--header-file=${LEXER_HPP} -o ${LEXER_CPP} ${LEX_FILE}
     )
 endforeach()
+
+add_compile_definitions(KS_STR_ENCODING_NONE)
