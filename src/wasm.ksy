@@ -1,3 +1,4 @@
+# -*- mode: yaml -*-
 meta:
     id: wasm
     title: WebAssembly 3.0 (2025-11-02) WASM file decoder
@@ -18,6 +19,7 @@ seq:
     - id: magic
       size: 4
       contents: [0x00, "asm"]
+      # doc: .wasm module signature
     - id: version
       # type: u4
       size: 4
@@ -44,3 +46,11 @@ types:
         type: u1
       - id: length
         type: u4
+
+enums:
+  externidx:
+    0x00: funcidx
+    0x01: tableidx
+    0x02: memidx
+    0x03: globalidx
+    0x04: tagidx
