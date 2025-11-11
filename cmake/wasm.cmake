@@ -41,3 +41,5 @@ foreach(WASM_FILE ${WASM})
         ARGS                -C ${WASM_FILE} > ${DUMP_FILE}
     )
 endforeach()
+
+add_custom_target(wasm DEPENDS ${WASD})

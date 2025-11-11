@@ -2,6 +2,11 @@
     "version": 6,
     "buildPresets": [
         {
+            "name"            :  "wasm",
+            "configurePreset" :  "linux",
+            "targets"         : ["wasm"]
+        },
+        {
             "name"            :  "linux",
             "configurePreset" :  "linux",
             "targets"         : ["all","install"],
