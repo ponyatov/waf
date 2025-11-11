@@ -16,6 +16,7 @@ include mk/doc.mk
 # include mk/ocaml.mk
 # include mk/rust.mk
 # include mk/llvm.mk
+include mk/wasm.mk
 include mk/kaitai.mk
 include mk/gz.mk
 include mk/ref.mk

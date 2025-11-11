@@ -34,5 +34,7 @@ file(GLOB INC
      cpu/inc  cpu/${CPU}/inc
     arch/inc arch/${ARCH}/inc
       os/inc   os/${OS}/inc
+    # wasm
+    ${KSY_RT}
 )
 include_directories(${INC})
