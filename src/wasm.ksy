@@ -5,6 +5,8 @@ meta:
     file-extension: wasm
     endian: le
     license: MIT
+    imports:
+      - leb128
 
 doc: |
   WebAssembly (abbreviated Wasm) is a safe, portable, low-level code format
@@ -45,7 +47,7 @@ types:
       - id: id
         type: u1
       - id: length
-        type: u4
+        type: leb128
 
 enums:
   externidx:
