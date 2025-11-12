@@ -1,5 +1,5 @@
 # `wasmtime`
-## [[WASI]] environment
+## [[WASI]] runtime
 
 The [[org/Mozilla Foundation]] has created a WebAssembly runtime called [[wasmtime]] that implements the [[WASI]] standard.
 

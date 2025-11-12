@@ -5,7 +5,7 @@ project(${CMAKE_PROJECT_NAME} VERSION 0.0.1 LANGUAGES C CXX ASM)
 include(version)  # binary files naming by version & git branch/hash
 include(src)      # scan project for source code files
 include(syntax)   # parser generators (flex,yacc/bison,ragel,lemon,..)
-include(kaitai)   #
+include(kaitai)   # binary parsers
 include(wasm)     # WebAssembly WASI runtime
 
 message("-- |")

@@ -23,6 +23,7 @@
         "rreverser.ragel",
         "fudgepops.kaitai-struct-vscode",
         // "serghei-iakovlev.language-lemon",
+        "fudgepops.kaitai-struct-vscode",
         // Python
         "ms-python.python",
         "ms-python.autopep8",
@@ -34,6 +35,6 @@
         "ocamllabs.ocaml-platform",
         // LLVM
         "rreverser.llvm",
-        "revng.llvm-ir",
+        "revng.llvm-ir"
     ]
 }
