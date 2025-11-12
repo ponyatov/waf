@@ -3,7 +3,7 @@
 *[[Rick Battagline]]*
 ISBN-13: 978-1-7185-0144-7 (print)
 ISBN-13: 978-1-7185-0145-4 (ebook)
-[[No Starch Press]], Inc. 2021
+[[org/pub/No Starch Press]], Inc. 2021
 
 ##### wasmru
 **Искусство [[WebAssembly]]**
