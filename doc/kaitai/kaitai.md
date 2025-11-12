@@ -1,4 +1,16 @@
-# Kaitai
+# [[Kaitai Struct]]
+## [[ksy]]
+
+декларативный язык описания структуры бинарных данных
+
+- https://kaitai.io/
+	- https://formats.kaitai.io/
+	- http://doc.kaitai.io/
+
+## install
+
+- [[extensions.json]]
+
 ## [[WebAssembly]]
 
 - [[ksv]]
@@ -16,6 +28,26 @@ https://github.com/kaitai-io/kaitai_struct_cpp_stl_runtime
 		"fudgepops.kaitai-struct-vscode",
 ```
 
+- `version.mk`
+```Makefile
+# version
+KAITAI_VER = 0.11
+```
+
+- tool.mk
+```Makefile
+KAITAI = /usr/bin/kaitai-struct-compiler
+```
+
+- kaitai.mk
+```Makefile
+GZ         += $(KAITAI)
+KAITAI_DEB  = kaitai-struct-compiler_$(KAITAI_VER)_all.deb
+KAITAIL_URL = https://github.com/kaitai-io/kaitai_struct_compiler/releases/download
+$(KAITAI): $(DISTR)/Linux/$(KAITAI_DEB)
+	sudo dpkg -i $^ && sudo touch $@
+$(DISTR)/Linux/$(KAITAI_DEB):
+	$(CURL) $@ $(KAITAIL_URL)/$(KAITAI_VER)/$(KAITAI_DEB)
 ```Makefile
 # version
 KAITAI_VER = 0.10
@@ -62,7 +94,9 @@ ref/kaitai-pdf:
 
 doc/PDF_ISO_32000-2.pdf:
 	$(CURL) $@ https://developer.adobe.com/document-services/docs/assets/5b15559b96303194340b99820d3a70fa/PDF_ISO_32000-2.pdf
+>>>>>>> c138fa8ed315e32964fee592eac178f9dedb4973
 ```
 
 > [[format/PDF|PDF]]
 
+## [[WASM/WASM#3.0]]
